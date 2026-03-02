@@ -2,4 +2,4 @@ FROM python:3.13
 WORKDIR /app
 COPY . .
 RUN pip install termcolor
-CMD ["python", "docker_example.py"]
+CMD ["python", "docker-example.py"]
