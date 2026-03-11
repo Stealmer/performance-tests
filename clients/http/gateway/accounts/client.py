@@ -46,6 +46,7 @@ class AccountsHTTPClient(HTTPClient):
     def get_accounts_api(self, query: GetAccountQueryDict) -> Response:
         """
         Выполняет GET-запрос на получение списка счетов пользователя.
+
         :param query: Словарь с параметрами запроса, например {'userId': '123'}.
         :return: Объект httpx.Response с данными о счетах.
         """
@@ -54,6 +55,7 @@ class AccountsHTTPClient(HTTPClient):
     def open_deposit_account_api(self, request: OpenDepositAccountRequestDict) -> Response:
         """
         Выполняет POST-запрос для открытия депозитного счета.
+
         :param request: Словарь с userId.
         :return: Объект httpx.Response.
         """
@@ -62,6 +64,7 @@ class AccountsHTTPClient(HTTPClient):
     def open_savings_account_api(self, request: OpenSavingsAccountRequestDict) -> Response:
         """
         Выполняет POST-запрос для открытия сберегательного счета.
+
         :param request: Словарь с userId.
         :return: Объект httpx.Response.
         """
@@ -70,6 +73,7 @@ class AccountsHTTPClient(HTTPClient):
     def open_debit_card_account_api(self, request: OpenDebitCardAccountRequestDict) -> Response:
         """
         Выполняет POST-запрос для открытия дебетовой карты.
+
         :param request: Словарь с userId.
         :return: Объект httpx.Response.
         """
@@ -78,6 +82,7 @@ class AccountsHTTPClient(HTTPClient):
     def open_credit_card_account_api(self, request: OpenCreditCardAccountRequestDict) -> Response:
         """
         Выполняет POST-запрос для открытия кредитной карты.
+
         :param request: Словарь с userId.
         :return: Объект httpx.Response.
         """
